@@ -1,0 +1,30 @@
+.staff-header {
+    background-color: #ff5722;
+    padding-bottom: 20px;
+  }
+  
+  .staff-header__en {
+    font-size: 150pt;
+    width: 100%;
+    top: -50px;
+    opacity: 0.1;
+    letter-spacing: 10px !important;
+    color: white;
+    max-height: 250px;
+    line-height: 230px;
+  }
+  
+  .staff-header__fa {
+    font-size: 3.75rem !important;
+    font-weight: 300;
+    line-height: 3.75rem;
+    letter-spacing: -0.0083333333em !important;
+    /* font-family: Vazir, serif !important; */
+    font-weight: 900;
+    color: white;
+    position: absolute;
+    right: 10%;
+    top: 75px;
+    filter: blur(1px);
+  }
+  

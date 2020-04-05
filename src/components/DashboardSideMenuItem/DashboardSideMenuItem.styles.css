@@ -1,0 +1,38 @@
+.dashboard-side-menu-item {
+    border-bottom-left-radius: 32px;
+    border-top-left-radius: 32px;
+    -webkit-box-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-flex: 1;
+    flex: 1 1 100%;
+    letter-spacing: normal;
+    min-height: 48px;
+    outline: none;
+    padding: 0 16px;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+}
+  
+  .dashboard-side-menu-item:hover {
+    background-color: #ff6434;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .dashboard-side-menu-item--active {
+    background-color: #ff7f57;
+  }
+  
+  .dashboard-sideMenu-item__icon {
+      width: 20px;
+      margin-left: 30px;
+  }

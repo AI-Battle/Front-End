@@ -1,0 +1,18 @@
+.staff-navigator {
+    flex-grow: 1;
+    cursor: pointer;
+    padding-top: 10px;
+    transition: .5s;
+    min-width: 150px;
+  }
+  
+  .staff-navigator--active {
+    border-bottom: solid 2px #ff5722;
+    color: #ff5722;
+  }
+  
+  .staff-navigator:hover {
+      /* background-color: #5C213E; */
+      opacity: .5;
+  }
+  

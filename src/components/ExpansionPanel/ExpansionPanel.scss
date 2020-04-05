@@ -1,0 +1,27 @@
+.expansion-panel-content {
+    color: rgb(47, 9, 78);
+}
+
+.expansion-panel-summary {
+    background-color: rgb(47, 9, 78);
+}
+
+.score-panel-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1%;
+    border-bottom: 1px solid rgba(71, 55, 103, 0.5);
+
+    &__team-name {
+        width: 40%;
+        text-align: start;
+        margin-right: 10%;
+    }
+
+    &__team-statistics {
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+    }
+}

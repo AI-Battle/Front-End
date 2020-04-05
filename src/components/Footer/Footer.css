@@ -1,0 +1,41 @@
+.background {
+    background-color: rgb(41, 9, 78);
+}
+
+.footer-link {
+    color: #eee;
+    font-size: 13px;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+.footer-link:hover {
+    color: #70aed2;
+    text-decoration: none;
+}
+
+.moveRight {
+    animation: moveRight 2s;
+    -webkit-animation: moveRight 2s;
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(-100px);
+        -webkit-transform: translateX(-100px);
+        -moz-transform: translateX(-100px);
+        -ms-transform: translateX(-100px);
+        -o-transform: translateX(-100px);
+}
+
+    100% {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+}

@@ -1,0 +1,17 @@
+.scores {
+    padding-bottom: 1%;
+    padding-top: 1%;
+    display: flex;
+    border-bottom: 1px solid rgba(71, 55, 103, 0.5);
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+     
+    &:hover { 
+        background-color: rgba(71, 55, 103, 0.8);
+        cursor: pointer;
+    }
+}
+

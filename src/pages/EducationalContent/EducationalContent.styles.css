@@ -1,0 +1,50 @@
+.list:first-child {
+    list-style: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .educational-content {
+        margin-right: 22rem;
+        width: 70%;
+        
+    }
+}
+
+@media screen and (max-width: 1176px) {
+    .educational-content {
+        margin-right: 22rem;
+        width: 55%;
+        
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    .educational-content {
+        margin-right: 22rem;
+        width: 65%;
+        
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    .educational-content {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .educational-content {
+        margin-right: 0;
+        width: 100%;
+        
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .educational-content {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+}

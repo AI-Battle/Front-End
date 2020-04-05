@@ -1,0 +1,15 @@
+.staff-names__single {
+    width: 150px;
+    padding: 10px;
+}
+
+.staff-names__single__img {
+    border-radius: 100%;
+    width: 100%;
+}
+
+.staff-names__single__role {
+    color: #E68F1E;
+    font-size: .8em;
+    margin-top: 5px;
+}

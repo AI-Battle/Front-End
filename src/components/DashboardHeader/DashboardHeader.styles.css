@@ -1,0 +1,22 @@
+.dashboard-header {
+    background-color: rgb(47, 9, 78);
+    margin-left: 1rem;
+    margin-right: auto;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    cursor: pointer;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+}
+
+.dashboard-header:hover {
+    background-color: rgba(71, 55, 103, 0.7);
+}

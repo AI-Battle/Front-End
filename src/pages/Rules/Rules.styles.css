@@ -1,0 +1,27 @@
+@media screen and (max-width: 600px) {
+    .rules-box {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .rules-box {
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        margin-right: 30%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .rules-box {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
