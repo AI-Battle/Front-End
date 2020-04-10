@@ -14,28 +14,28 @@ const MENU_ITEMS = [
         id: 1,
         name: 'خانه',
         active: true,
-        link: '/dashboard',
+        link: '/challengeschallenges/challenge1',
         icon: {image: home}
     },
     {
         id: 2,
         name: 'قوانین',
         active: true,
-        link: '/dashboard/rules',
+        link: '/challengeschallenges/challenge1/rules',
         icon: {image: error}
     },
     {
         id: 3,
         name: 'اعلان‌ها',
         active: true,
-        link: '/dashboard/announcements',
+        link: '/challengeschallenges/challenge1/announcements',
         icon: {image: speaker}
     },
     {
         id: 4,
         name: 'منابع',
         active: true,
-        link: '/dashboard/resources',
+        link: '/challengeschallenges/challenge1/resources',
         icon: {image: resources}
     },
     {
@@ -43,42 +43,42 @@ const MENU_ITEMS = [
         name: 'محتوای آموزشی',
         active: false,
         icon: {image: education},
-        link: '/dashboard/educationalcontent'
+        link: '/challengeschallenges/challenge1/educationalcontent'
     },
     {
         id: 6,
         name: 'تورنومنت ها',
         active: false,
         icon: {image: tournament},
-        link: '/dashboard/tournoment'
+        link: '/challengeschallenges/challenge1/tournament'
     },
     {
         id: 7,
         name: 'جدول امتیازات',
         active: false,
         icon: {image: rank},
-        link: '/dashboard/scoreboard'
+        link: '/challengeschallenges/challenge1/scoreboard'
     },
     {
         id: 8,
         name: 'تیم',
         active: false,
         icon: {image: worker},
-        link: '/dashboard/teamselection'
+        link: '/challengeschallenges/challenge1/teamselection'
     },
     {
         id: 9,
         name: 'ارسال کد',
         active: false,
         icon: {image: send},
-        link: '/dashboard/sendcode'
+        link: '/challengeschallenges/challenge1/codesend'
     },
     {
         id: 10,
         name: 'بازی ها',
         active: false,
         icon: {image: sony},
-        link: '/dashboard/games'
+        link: '/challenges'
     },
 ]
 

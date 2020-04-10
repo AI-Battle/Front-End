@@ -4,7 +4,6 @@ import logo from '../../images/PicsArt_03-18-01.44.08.png';
 import './WhyAI.css';
 
 
-
 function WhyAI() {
 
     const [position, setPosition] = useState(0)
@@ -24,12 +23,8 @@ function WhyAI() {
                     </div>
                 </div>
             </div>
-            <div className="container">
-                <div className="row align-items-center d-flex justify-content-center">
-                    <div className={`col-lg-5 text-center ${position < -400 && 'zoomIn'}`}>
-                        <img src={logo} width='350' className='image-fluid moveRight' alt="" />
-                    </div>
-                </div>
+            <div>
+                <img src={logo} width='250px' />
             </div>
         </div>
     )

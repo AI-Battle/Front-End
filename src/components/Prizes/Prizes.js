@@ -16,7 +16,7 @@ function Prizes() {
             <div className="container-fluid">
                 <div className="row text-white text-center">
                     <div className="col m-4">
-                        <h1 className={`display-4 mb-4 ${position < -850 && 'moveBottom'}`}>جوایز</h1>
+                        <h1 className={`display-4 mb-4 ${position < -650 && 'moveBottom'}`}>جوایز</h1>
                         <div className="underline mb-4"></div>
                         <p className='lead'>هر دوره چالش هایی در قالب تورنومنت برگزار خواهد شد که جوایزی اعم از وجه نقد و تندیس و تیشرت و ... خواهد داشت.</p>
                     </div>

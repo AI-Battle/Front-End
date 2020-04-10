@@ -1,8 +1,6 @@
 import React from 'react';
 
 // styled components
-import { Background } from '../../styled-components/Background.styles';
-import { BigBox } from '../../styled-components/BigBox.styles';
 import { SmallBox } from '../../styled-components/SmallBox.styles';
 import './Announcements.styles.css';
 
@@ -11,38 +9,35 @@ import { connect } from 'react-redux';
 
 function Announcements({Announcements}) {
 
-    const renderAnnouncements = Announcements.map(rule => {
+    const renderAnnouncements = Announcements.map(announcement => {
         return (
             <ul
                 style={{
                     listStyle: 'none',
                     textAlign: 'end'
                 }}
+                className='announcements-box'
             >
-                <SmallBox key={rule.id}>
-                    {rule.text}
+                <SmallBox key={announcement.id}
+                    style={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        justifyContent: 'space-between'
+                    }}
+                >
+                    <span>{announcement.text}</span>
+                    <span style={{alignSelf: 'flex-end', color: '#ccc', fontSize: '80%'}}>{announcement.date}</span>
                 </SmallBox>
             </ul> 
         )
     })
     
     return (
-        <Background
-            Height = '100vh'
+        <div
+            className='announcements-background'
         >
-            <BigBox
-                Width = '80%'
-                Height = '80%'
-                backgroundColor = 'rgb(45, 10, 79)'
-                MarginTop = '2%'
-                MarginRight = '18%'
-                PaddingRight = '1%' 
-                PaddingTop = '1%'
-                className = 'announcements-box'
-            >
-                {renderAnnouncements}
-            </BigBox>
-        </Background>
+            {renderAnnouncements}
+        </div>
     )
 
 }

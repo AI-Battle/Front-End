@@ -1,5 +1,10 @@
 .dashboard-header {
-    background-color: rgb(47, 9, 78);
+    background-color: rgb(21,8,51);
+    display: flex;
+    justify-content: space-between;  
+}    
+
+.dashboard-header-profile {
     margin-left: 1rem;
     margin-right: auto;
     padding: 1rem;
@@ -15,8 +20,4 @@
     -moz-transition: all .2s;
     -ms-transition: all .2s;
     -o-transition: all .2s;
-}
-
-.dashboard-header:hover {
-    background-color: rgba(71, 55, 103, 0.7);
 }

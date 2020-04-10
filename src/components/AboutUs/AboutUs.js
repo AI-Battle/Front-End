@@ -4,6 +4,8 @@ import { useScrollPosition } from '@n8tb1t/use-scroll-position';
 import { Link } from 'react-router-dom';
 import './AboutUs.css';
 
+import PopupWindow from '../PopupWindow/PopupWindow.component'
+
 function AboutUs({ SomeStuff }) {
 
     const [position, setPosition] = useState(0)
@@ -14,14 +16,8 @@ function AboutUs({ SomeStuff }) {
 
     const renderSomeStuff = SomeStuff.map(person => {
         return (
-            <div className='d-flex flex-column w-100 align-items-center'>
-                <div className={`image-cropper ${position < -1400 && 'zoomIn'}`}>
-                    <img src={person.imgSrc} alt='person' className='image' width='100px' />
-                </div>
-                <div>
-                    <p className="text-light mt-2">{person.name}</p>
-                    <p className='text-light'>{person.role}</p>
-                </div>
+            <div className='d-flex flex-column w-100 align-items-center singleStuff'>
+                <PopupWindow person={person} />
             </div>
         )
     })
@@ -32,7 +28,7 @@ function AboutUs({ SomeStuff }) {
                 
                 <div className="row text-white text-center d-flex justify-content-center">
                     <div className="col-m4">
-                        <h1 className={`display-4 mb-4 text-center ${position < -1250 && 'moveBottom'}`}>در باره ما</h1>
+                        <h1 className={`display-4 mb-4 text-center ${position < -1000 && 'moveBottom'}`}>در باره ما</h1>
                         <div className="underline mb-4"></div>
                         <p className="lead">برخی از اعضای تیم</p>
                     </div>
@@ -55,3 +51,4 @@ const mapStateToProps = state => {
 }
 
 export default connect(mapStateToProps)(AboutUs);
+

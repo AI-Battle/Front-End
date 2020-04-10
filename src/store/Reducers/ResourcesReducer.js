@@ -5,7 +5,6 @@ import server from '../../images/server.png'
 import java from '../../images/java.png'
 import python from '../../images/python.png'
 import code from '../../images/code.png'
-import go from '../../images/icons8-golang-48.png'
 import download from '../../images/download (1).png'
 
 const Resources = [
@@ -25,7 +24,7 @@ const Resources = [
         id: 3, 
         heading: 'سرور و کلاینت', 
         text: 'هموراه می‌توانید نسخه آخر سرور و کلاینت‌ها را از مخازن زیر دریافت کنید.', 
-        buttons: [{text: 'سرور', icon: server}, {text: 'کلاینت java', icon: java}, {text: 'کلاینت python', icon: python}, {text: 'کلاینت ++c', icon: code}, {text: 'کلاینت Go', icon: go}]
+        buttons: [{text: 'سرور', icon: server}, {text: 'کلاینت java', icon: java}, {text: 'کلاینت python', icon: python}, {text: 'کلاینت ++c', icon: code}]
     }
 ]
 

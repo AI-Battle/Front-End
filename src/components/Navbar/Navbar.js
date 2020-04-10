@@ -4,6 +4,7 @@ import { Link } from 'react-scroll';
 import { useScrollPosition } from '@n8tb1t/use-scroll-position';
 import useToggleState from '../../hooks/useToggleState';
 import logo from '../../PicsArt_03-18-01.44.08.png';
+import face from '../../images/face.gif';
 
 function Navbar(props) {
     const [position, setPosition] = useState(0);
@@ -15,7 +16,7 @@ function Navbar(props) {
     return (
         <nav class={`navbar navbar-expand-lg fixed-top nav-menu ${position < -600 && 'custom-navbar'}`}>
             <img src={logo} width='50' height='50' className='mr-3' />
-            <RouterLink to='/' className="navbar-brand text-light navbar_brand">AI Challenges</RouterLink>
+            <RouterLink to='/' className="navbar-brand text-light navbar_brand">AI Battles</RouterLink>
             <button class="navbar-toggler nav-button" type="button" data-toggle="collapse" data-target="#myNavbar" onClick={setNavLine}>
                 <div class={`bg-light line1 ${navLine ? 'changeLine1' : ''}`}></div>
                 <div class={`bg-light line2 ${navLine ? 'changeLine2' : ''}`}></div>

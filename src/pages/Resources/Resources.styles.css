@@ -2,116 +2,38 @@
     list-style: none;
 }
 
-@media screen and (max-width: 1130px) {
-    .list {
-        padding-bottom: 4rem;
-    }
+.resources-background {
+    width: 80%;
+    margin-left: 0;
+    margin-right: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.resources-box {
+    background-color: rgb(47, 9, 78);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
 }
 
 @media screen and (max-width: 1200px) {
     .resources-box {
-        margin-left: auto;
-        margin-right: auto;
-        width: 60%;
-        height: 35%;
-        margin-right: 30%;
-        margin-left: 0;
+        width: 90%;
+        float: left;
     }
 }
 
-@media screen and (max-width: 1200px) {
-    .list {
-        padding-bottom: 2rem;
-    }
-}
-
-@media screen and (max-width: 1250px) {
-    .list {
-        padding-bottom: 3rem;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .list {
-        padding-bottom: 4rem;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .list {
-        padding-bottom: 4rem;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .list {
-        padding-bottom: 4rem;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .resources-box {
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        margin-right: auto;
-        margin-left: auto;
-    }
-}
-
-@media screen and (max-width: 890px) {
-    .list {
-        padding-bottom: 6rem;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .list {
-        padding-bottom: 6rem;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .list {
-        padding-bottom: 7rem;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .resources-box {
-        margin-left: auto;
-        margin-right: auto;
+@media screen and (max-width: 990px) {
+    .resources-background {
         width: 100%;
     }
-}
-
-@media screen and (max-width: 530px) {
-    .list {
-        padding-bottom: 8rem;
-    }
-}
-
-@media screen and (max-width: 495px) {
-    .list {
-        padding-bottom: 8rem;
-    }
-}
-
-@media screen and (max-width: 427px) {
-    .list {
-        padding-bottom: 9rem;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .list {
-        padding-bottom: 12rem;
-    }
-}
-
-@media screen and (max-width: 400px) {
     .resources-box {
-        height: 40%;
+        width: 100%;
     }
 }
 

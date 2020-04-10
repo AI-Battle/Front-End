@@ -2,8 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 // styled components
-import { Background } from '../../styled-components/Background.styles';
-import { BigBox } from '../../styled-components/BigBox.styles';
 import ContainerHeader from '../../components/ContainerHeader/ContainerHeader.component';
 import { Button } from '../../styled-components/Button.styles';
 import { Paragraph } from '../../styled-components/Paragraph.styles';
@@ -13,33 +11,30 @@ function EducationalContent({ TechnicalEducations, ScientificEducations }) {
     const renderTechnicalEducations = TechnicalEducations.map(re => {
         return (
             <li style={{
-                marginBottom: '13%'
+                listStyle: 'none'
             }}
-                className='list'
+                className='list-education'
             >
-                <BigBox
-                    Width = '77%'
-                    Height = '28%'
-                    backgroundColor = 'rgb(45, 10, 79)'
-                    MarginTop = '2%'
-                    MarginRight = '20%'
+                <div
                     style={{
                         display: 'flex',
-                        flexDirection: 'column'
+                        flexDirection: 'column',
+                        backgroundColor: 'rgb(47, 9, 78)',
+                        borderRadius: '1rem'
                     }}
-                    className = 'educational-content'
                 >
                     <ContainerHeader
-                        heading = {re.heading} 
+                        heading = {re.persianHeading} 
+                        subHeading = {re.heading}
                     />
-                    <Paragraph>{re.text}</Paragraph>
+                    <Paragraph style={{textAlign: 'start'}}>{re.text}</Paragraph>
                     <Button 
                         className='btn btn-outline-warning mr-3 pb-2 w-15'
                         style={{alignSelf: 'flex-start'}}
                     >
                         دریافت محتوا
                     </Button>
-                </BigBox>
+                </div>
             </li>
         )
     })
@@ -47,43 +42,41 @@ function EducationalContent({ TechnicalEducations, ScientificEducations }) {
     const renderScientificEducations =  ScientificEducations.map(re => {
         return (
             <li style={{
-                marginBottom: '13%'
-            }}>
-                <BigBox
-                    Width = '77%'
-                    Height = '28%'
-                    backgroundColor = 'rgb(45, 10, 79)'
-                    MarginTop = '2%'
-                    MarginRight = '20%'
+                listStyle: 'none'
+            }}
+                className='list-education'
+            >
+                <div
                     style={{
                         display: 'flex',
-                        flexDirection: 'column'
+                        flexDirection: 'column',
+                        backgroundColor: 'rgb(47, 9, 78)',
+                        borderRadius: '1rem'
                     }}
-                    className = 'educational-content'
                 >
                     <ContainerHeader
-                        heading = {re.heading} 
+                        heading = {re.persianHeading} 
+                        subHeading = {re.heading}
                     />
-                    <Paragraph>{re.text}</Paragraph>
+                    <Paragraph style={{textAlign: 'start'}}>{re.text}</Paragraph>
                     <Button 
                         className='btn btn-outline-warning mr-3 pb-2 w-15'
                         style={{alignSelf: 'flex-start'}}
                     >
                         دریافت محتوا
                     </Button>
-                </BigBox>
+                </div>
             </li>
         )
     })
     
     return (
-        <Background
-            Height = '220vh'
-            
+        <div
+            className = 'education-background'
         >
             {renderTechnicalEducations}
             {renderScientificEducations}
-        </Background>
+        </div>
     )
 }
 

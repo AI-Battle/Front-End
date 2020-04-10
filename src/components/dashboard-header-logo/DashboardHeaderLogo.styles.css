@@ -1,0 +1,14 @@
+.dashboard-header-logo {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  border-bottom-left-radius: 24px;
+  background-color: #281047;
+}
+
+.dashboard-header-logo__svg {
+  width: 100px;
+  display: flex;
+  margin: auto;
+}
+

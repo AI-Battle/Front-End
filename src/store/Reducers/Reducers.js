@@ -14,6 +14,7 @@ import { RulesReducer } from './RulesReducer';
 import { ScientificEducationsReducer } from './ScientificEducationsReducer';
 import { TeamsReducer } from './TeamsReducer';
 import { TechnicalEducationsReducer } from './TechnicalEducationsReducer';
+import { ChallengesReducer } from './ChallengesReducer'
 
 
 export default combineReducers({
@@ -30,4 +31,5 @@ export default combineReducers({
     ScientificEducations: ScientificEducationsReducer,
     Teams: TeamsReducer,
     FriendTeams: FriendlyMatchTeamsReducer, 
+    Challenges: ChallengesReducer
 })

@@ -8,7 +8,9 @@ const Statistics = {
     win: '۳۳',
     lose: '۲۰',
     equality: '۲۰', 
-    percentage: '33',
+    winPercentage: '60%',
+    equalityPercentage: '10%',
+    losePercentage: '30%',
     happyFace: happy,
     sadFace: sad,
     neutralFace: neutral

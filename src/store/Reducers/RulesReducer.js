@@ -3,7 +3,7 @@ const Rules = [
     {id: 2, text: 'قانون دوم'},
     {id: 3, text: 'قانون سوم'},
     {id: 4, text: 'قانون چهارم'},
-    {id: 5, text: 'قانون پنجم'},
+    {id: 5, text: 'قانون پنجم'}
 ]
 
 export const RulesReducer = (state = Rules, action) => {

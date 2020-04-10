@@ -11,45 +11,39 @@ import './Resources.styles.css';
 
 function Resources({Resources}) {
     const renderResources = Resources.map(re => {
-        console.log(re)
         return (
             <li style={{
-                marginBottom: '13%'
+                listStyle: 'none'
             }}
-                className='list'
+                className='resource-list'
             >
-                <BigBox
-                    Width = '77%'
-                    Height = '30%'
-                    backgroundColor = 'rgb(45, 10, 79)'
-                    MarginTop = '2%'
-                    MarginRight = '20%'
+                <div
                     className='resources-box'
                 >
                     <ContainerHeader
                         heading = {re.heading} 
                     />
-                    <Paragraph className='mb-2' style={{textAlign: 'start'}}>{re.text}</Paragraph>
-                    <div className='d-flex justify-content-start mr-3'>
+                    <Paragraph className='mb-1' style={{textAlign: 'start'}}>{re.text}</Paragraph>
+                    <div className='d-flex justify-content-start mr-3 buttonContainer'>
                         {re.buttons.map(btn => 
-                            <Button className='btn btn-outline-warning mr-3 pb-2'>
+                            <Button className='btn btn-outline-warning mr-3 pb-2 buttons'>
                                 <img src={btn.icon} width='30px' />
                                 &nbsp;
                                 {btn.text}
                             </Button>
                         )}
                     </div>
-                </BigBox>
+                </div>
             </li>
         )
     })
 
     return (
-        <Background
-            Height = '120vh'
+        <div
+            className='resources-background'
         >
             {renderResources}
-        </Background>
+        </div>
     )
 }
 

@@ -1,0 +1,23 @@
+.dashboard-home {
+    height: 150vh;
+    background-color: #160035;
+    display: flex;
+    margin-top: 4rem;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 1280px) {
+    .dashboard-home {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #160035;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .dashboard-home {
+        align-items: center;
+    }
+}

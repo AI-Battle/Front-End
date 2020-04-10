@@ -5,14 +5,20 @@ import './ContainerHeader.styled'
 // styled components
 import { ContainerHeaderBorder } from './ContainerHeader.styled'
 
-function ContainerHeader({heading, buttonText, showButton}) {
+function ContainerHeader({heading, buttonText, showButton, subHeading}) {
     return (
         <ContainerHeaderBorder>
-            <h4>{heading}</h4>
+            <div style={{
+                display: 'flex',
+                alignItems: 'center'
+            }}>
+                <h4>{heading}</h4>
+                <span style={{color: '#ccc', marginRight: '1rem', marginBottom: '.5rem'}}>{subHeading}</span>
+            </div>
             {
                 showButton 
                 ? 
-                <Link to='/dashboard/announcements' className='btn btn-warning text-light'>
+                <Link to='/challengeschallenges/challenge1/announcements' className='btn btn-warning text-light'>
                     { buttonText }
                 </Link> 
                 :

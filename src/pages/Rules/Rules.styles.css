@@ -1,3 +1,23 @@
+.rules-box {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.rules-box::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+.rules-background {
+    margin-top: 3rem;
+    background-color: rgb(21,8,51);
+}
+
+.rules-box {
+    width: 80%;
+    float: left;
+}
+
 @media screen and (max-width: 600px) {
     .rules-box {
         margin-left: auto;

@@ -2,4 +2,6 @@
     background-color: rgb(41, 9, 78);
     color: white;
     direction: rtl;
+    display: flex;
+    flex-direction: column;
   }

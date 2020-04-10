@@ -63,7 +63,7 @@ class SignIn extends Component {
 		}
 
         this.setState({ email: '', password: '' });
-        this.props.history.push('/dashboard')
+        this.props.history.push('/challenges')
 	}
 
 	handleChange = event => {

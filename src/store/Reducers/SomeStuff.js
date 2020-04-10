@@ -1,52 +1,46 @@
-import img1 from '../../images/1.jpg'
-import img2 from '../../images/2.jpg'
 import img3 from '../../images/3.jpg'
 import img4 from '../../images/4.jpg'
-import img5 from '../../images/5.jpg'
-import img6 from '../../images/6.jpg'
-
+import img5 from '../../images/7.jpg'
+import img6 from '../../images/2.jpg'
 
 const SomeStuff = [
     {
         id: 1,
-        name: 'حسن مرادی ویشکایی',
-        role: 'فرانت اند',
-        imgSrc: img1
+        name: 'علی باغبان',
+        latinName: '',
+        role: 'دبیر بک اند',
+        linkedInAccount: '',
+        githubAccount: 'http://Github.com/Arghun-dev',
+        imgSrc: img6
     },
 
     {
         id: 2,
-        name: 'علی باغبان',
-        role: 'بک اند',
-        imgSrc: img2
-    },
-
-    {
-        id: 3,
         name: 'ارغون موسی نژاد',
+        latinName: 'Arghun Mousanezhad',
+        job: 'Senior Front-end & React Developer',
         role: 'دبیر فرانت اند',
+        linkedInAccount: 'http://linkedin.com/in/arghun-mousanezhad-06575618a',
+        githubAccount: 'http://Github.com/Arghun-dev',
         imgSrc: img3
     },
 
     {
-        id: 4,
+        id: 3,
         name: 'علی صدفی',
         role: 'سر دبیر',
+        linkedInAccount: '',
+        githubAccount: 'http://Github.com/Arghun-dev',
         imgSrc: img4
     },
 
     {
-        id: 5,
-        name: 'محمود ابدلی',
-        role: 'بک اند',
+        id: 4,
+        name: 'علی حسین مردی',
+        role: 'دبیر بازی و گرافیک',
+        linkedInAccount: '',
+        githubAccount: 'http://Github.com/Arghun-dev',
         imgSrc: img5
-    },
-
-    {
-        id: 6,
-        name: 'سید امیر حسام موسوی ویری',
-        role: 'مدیریت مالی',
-        imgSrc: img6
     }
 ]
 

@@ -1,21 +1,12 @@
 import React from 'react';
 
-// styled components
-import { BigBox } from '../../styled-components/BigBox.styles';
-
 // inner components
 import ContainerHeader from '../ContainerHeader/ContainerHeader.component';
 import List from '../List/List.component';
 
 
 function Container(
-    {
-        backgroundColor, 
-        Width, 
-        Height, 
-        MarginTop, 
-        MarginLeft,
-        MarginRight, 
+    { 
         showAnnouncementHeader, 
         showAnnouncementList, 
         showStatisticsList, 
@@ -25,13 +16,15 @@ function Container(
         Heading
     }) {
     return (
-        <BigBox
-            backgroundColor = { backgroundColor }
-            Width = { Width }
-            Height = { Height }
-            MarginTop = { MarginTop }
-            MarginLeft = { MarginLeft }
-            MarginRight = { MarginRight }
+        <div
+            style={{
+                backgroundColor: 'rgb(47, 9, 78)',
+                width: '30rem',
+                height: '23rem',
+                overflow: 'hidden',
+                margin: '2rem',
+                borderRadius: '1rem'
+            }}
         >
             {showAnnouncementHeader ? 
                 <ContainerHeader
@@ -62,7 +55,7 @@ function Container(
                 showStatisticsList = {showStatisticsList} 
                 showResourcesList = {showResourcesList}
             />
-        </BigBox>
+        </div>
     )
 }
 

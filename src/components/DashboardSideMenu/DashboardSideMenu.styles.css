@@ -1,6 +1,6 @@
 .dashboard-side-menu {
   background-color: #ff5722;
-  height: calc(100vh - 104px);
+  height: 100vh;
   border-radius: 20px 0 0 20px;
   font-weight: 700;
   overflow-y: auto;
@@ -8,7 +8,7 @@
   
 .dashboard-side-menu--container {
   position: fixed;
-  margin-top: 1rem;
+  margin-top: -4.85%;
   border-radius: 20px 0 0 20px;
   overflow-x: hidden;
   align-self: flex-start;

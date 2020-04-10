@@ -62,7 +62,7 @@ const DashboardTeam = () => {
                     </div>
 
                     <div className='dashboard-team__tabs__single__title'>
-                        سید بندی
+                        لیگ
                     </div>
 
                 </div>
@@ -74,30 +74,6 @@ const DashboardTeam = () => {
 
                     <div className='dashboard-team__tabs__single__title'>
                         دوستانه
-                    </div>
-
-                </div>
-
-                <div id="3" className='dashboard-team__tabs__single pt-2' onClick={handleTab}>
-
-                    <div className='dashboard-team__tabs__single__icon'>
-                        <img src={select1} width="24" height="24" viewBox="0 0 24 24" fill="#000" />
-                    </div>
-
-                    <div className='dashboard-team__tabs__single__title'>
-                        انتخابی
-                    </div>
-
-                </div>
-
-                <div id="4" className='dashboard-team__tabs__single pt-2' onClick={handleTab}>
-
-                    <div className='dashboard-team__tabs__single__icon'>
-                        <img src={finishline} width="24" height="24" viewBox="0 0 24 24" fill="#000" />
-                    </div>
-
-                    <div className='dashboard-team__tabs__single__title'>
-                        مرحله نهایی
                     </div>
 
                 </div>

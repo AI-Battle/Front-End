@@ -1,8 +1,6 @@
 import React from 'react';
 
 // styled components
-import { Background } from '../../styled-components/Background.styles';
-import { BigBox } from '../../styled-components/BigBox.styles';
 import { SmallBox } from '../../styled-components/SmallBox.styles';
 import './Rules.styles.css';
 
@@ -18,33 +16,43 @@ function Rules({ Rules }) {
                     listStyle: 'none',
                     textAlign: 'end'
                 }}
+                className='rules-box'
             >
-                <SmallBox key={rule.id}>
-                    {rule.text}
+                <SmallBox key={rule.id}
+                    style={{color: '#ccc', fontSize: '90%'}}
+                >
+                    <div style={{
+                        display: 'flex'
+                    }}>
+                        <span 
+                        style={{
+                            width: '10px', 
+                            height: '10px',
+                            borderRadius: '50%',
+                            backgroundColor: '#ff5722',
+                            position: 'absolute',
+                            marginTop: '.2rem'
+                        }}>
+                        </span>
+                        <span
+                            style={{
+                                marginRight: '1.5rem'
+                            }}
+                        >
+                            {rule.text}
+                        </span>
+                    </div>
                 </SmallBox>
             </ul> 
         )
     })
 
     return (
-        <Background
-            Height = '10vh'
-        > 
-            <BigBox
-                Width = '80%'
-                Height = '80%'
-                backgroundColor = 'rgb(45, 10, 79)'
-                MarginTop = '2%'
-                MarginLeft = '2%'
-                MarginRight = '18%'
-                PaddingRight = '1%' 
-                PaddingTop = '1%'
-                className='rules-box'
-            >
-                
-                {renderRules}
-            </BigBox>
-        </Background>
+        <div
+            className='rules-background'
+        >     
+            {renderRules}
+        </div>
     )
 }
 
