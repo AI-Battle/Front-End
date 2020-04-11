@@ -1,5 +1,16 @@
 const AllTeams = [
     {
+        id: 99,
+        teamName: 'تیم ها',
+        ranking: 'رتبه',
+        score: 'امتیاز',
+        winPercentage: 'درصد برد',
+        win: 'برد',
+        equals: 'مساوی',
+        lost: 'باخت'
+    },
+
+    {
         id: 1,
         teamName: 'تیم اول',
         ranking: '۱',

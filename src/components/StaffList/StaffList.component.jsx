@@ -59,7 +59,7 @@ class StaffList extends Component {
                 <div className='staff-list__names py-5'>
                     {/* {console.log(staff.category)} */}
                     {
-                        staff.filter(staff => staff.category == activeCategoryType).map(({ id, ...others }) =>
+                        staff.filter(staff => staff.category === activeCategoryType).map(({ id, ...others }) =>
                             <StaffNames key={id} {...others} />
                         )
                     }

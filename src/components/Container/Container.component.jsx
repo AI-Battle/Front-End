@@ -4,7 +4,6 @@ import React from 'react';
 import ContainerHeader from '../ContainerHeader/ContainerHeader.component';
 import List from '../List/List.component';
 
-
 function Container(
     { 
         showAnnouncementHeader, 

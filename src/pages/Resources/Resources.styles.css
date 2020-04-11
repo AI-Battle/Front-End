@@ -28,9 +28,11 @@
     }
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 991px) {
     .resources-background {
-        width: 100%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .resources-box {
         width: 100%;

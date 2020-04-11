@@ -1,0 +1,15 @@
+.scores {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.score-panel-title__team-name {
+    width: 10%;
+}
+
+.score-panel-title__team-statistics {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}

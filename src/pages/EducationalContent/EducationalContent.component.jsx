@@ -11,7 +11,8 @@ function EducationalContent({ TechnicalEducations, ScientificEducations }) {
     const renderTechnicalEducations = TechnicalEducations.map(re => {
         return (
             <li style={{
-                listStyle: 'none'
+                listStyle: 'none',
+                marginBottom: '3rem'
             }}
                 className='list-education'
             >
@@ -42,7 +43,8 @@ function EducationalContent({ TechnicalEducations, ScientificEducations }) {
     const renderScientificEducations =  ScientificEducations.map(re => {
         return (
             <li style={{
-                listStyle: 'none'
+                listStyle: 'none',
+                marginBottom: '3rem'
             }}
                 className='list-education'
             >

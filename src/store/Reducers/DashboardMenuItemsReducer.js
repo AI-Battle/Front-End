@@ -78,7 +78,7 @@ const MENU_ITEMS = [
         name: 'بازی ها',
         active: false,
         icon: {image: sony},
-        link: '/challenges'
+        link: ''
     },
 ]
 

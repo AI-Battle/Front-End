@@ -5,6 +5,11 @@
   font-weight: 700;
   overflow-y: auto;
 }
+
+.dashboard-side-menu::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
   
 .dashboard-side-menu--container {
   position: fixed;

@@ -1,4 +1,10 @@
 .score-panel-content {
     display: flex;
     flex-direction: column;
+    background-color: rgb(47, 9, 78);  
+}
+
+.single-panel {
+    border-bottom: 1px solid rgb(47, 9, 78);
+    padding: 1rem 0;
 }

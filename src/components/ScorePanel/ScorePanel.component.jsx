@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 // components
-import ScorePanelHeader from './ScorePanelHeader.component'
+// import ScorePanelHeader from './ScorePanelHeader.component'
 import ScorePanelContent from './ScorePanelContent.component'
 
 import './ScorePanel.styles.css'

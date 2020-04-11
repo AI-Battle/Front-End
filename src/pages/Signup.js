@@ -6,7 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
 import { withStyles } from '@material-ui/styles';
-import axios from 'axios';
+// import axios from 'axios';
 import uuid from 'uuid/v4';
 
 const styles = {
@@ -52,7 +52,7 @@ class SignUp extends React.Component {
 
 		const { password, confirmPassword } = this.state;
 
-		if(password != confirmPassword) {
+		if(password !== confirmPassword) {
 			alert("تایید رمز صحیح نیست");
 			return;
 		}

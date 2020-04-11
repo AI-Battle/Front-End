@@ -1,7 +1,7 @@
 import React from 'react';
 
 // styled components
-import { ListBorder, StatisticsBorder, Circle, NumericalsBorder, Num } from './List.styles';
+import { ListBorder, StatisticsBorder, NumericalsBorder, Num } from './List.styles';
 
 // inner components
 import AnnouncementItem from '../AnnouncementItem/AnnouncementItem.component';
@@ -28,9 +28,9 @@ function List({Announcements, GameStatistics, showAnnouncementList, showStatisti
             <StatisticsBorder>
                 <CircleStatistics />
                 <NumericalsBorder>
-                    <Num>{GameStatistics.win} برد <img src={GameStatistics.happyFace} width='25px' /></Num>
-                    <Num>{GameStatistics.equality} مساوی <img src={GameStatistics.neutralFace} width='25px' /></Num>
-                    <Num>{GameStatistics.lose} باخت <img src={GameStatistics.sadFace} width='25px' /></Num>
+                    <Num>{GameStatistics.win} برد <img src={GameStatistics.happyFace} width='25px' alt='statistics' /></Num>
+                    <Num>{GameStatistics.equality} مساوی <img src={GameStatistics.neutralFace} width='25px' alt='statistics' /></Num>
+                    <Num>{GameStatistics.lose} باخت <img src={GameStatistics.sadFace} width='25px' alt='statistics' /></Num>
                 </NumericalsBorder>
             </StatisticsBorder> 
         )

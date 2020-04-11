@@ -14,8 +14,8 @@ function Footer() {
                 <div className="row text-light py-4">
                     <div className="col-lg-4 col-sm-6">
                         <ul className={`list-inline d-flex ${position < -2000 && 'moveRight'}`}>
-                            <li className="list-inline-item ml-2"><a href='#'><i className="fab fa-telegram square fa-2x text-info"></i></a></li>
-                            <li className="list-inline-item"><a href='#'><i className="fab fa-instagram square fa-2x text-danger"></i></a></li>
+                            <li className="list-inline-item ml-2"><button href='#'><i className="fab fa-telegram square fa-2x text-info"></i></button></li>
+                            <li className="list-inline-item"><button href='#'><i className="fab fa-instagram square fa-2x text-danger"></i></button></li>
                         </ul>
                     </div>
                 </div>

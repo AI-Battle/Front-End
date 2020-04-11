@@ -5,8 +5,15 @@
   margin-top: 5%;
   border-radius: 20px;
   color: white;
-  height: 69vh;
+  height: 100vh;
   /* padding: 12px; */
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.dashboard-team::-webkit-scrollbar {
+  width: .2px;
+  background: transparent; /* make scrollbar transparent */
 }
 
 .dashboard-team__tabs {
@@ -125,4 +132,19 @@
   background-color: #FF5722;
   border-radius: 25px;
   color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  .dashboard-team {
+    width: 60%;
+    margin-right: 30%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .dashboard-team {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }

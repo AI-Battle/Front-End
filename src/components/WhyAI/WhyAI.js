@@ -24,7 +24,7 @@ function WhyAI() {
                 </div>
             </div>
             <div>
-                <img src={logo} width='250px' />
+                <img src={logo} width='250px' alt='logo' />
             </div>
         </div>
     )

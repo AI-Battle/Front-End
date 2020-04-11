@@ -1,14 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Progress } from 'rsuite';
 
-const { Circle } = Progress;
-
-const style = {
-  width: 120,
-  display: 'inline-block',
-  
-};
 
 function CircleStatistics({ GameStatistics }) {
     return (

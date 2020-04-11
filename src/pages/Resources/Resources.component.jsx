@@ -2,8 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 // styled components
-import { Background } from '../../styled-components/Background.styles';
-import { BigBox } from '../../styled-components/BigBox.styles';
 import { Button } from '../../styled-components/Button.styles';
 import { Paragraph } from '../../styled-components/Paragraph.styles';
 import ContainerHeader from '../../components/ContainerHeader/ContainerHeader.component';
@@ -27,7 +25,7 @@ function Resources({Resources}) {
                     <div className='d-flex justify-content-start mr-3 buttonContainer'>
                         {re.buttons.map(btn => 
                             <Button className='btn btn-outline-warning mr-3 pb-2 buttons'>
-                                <img src={btn.icon} width='30px' />
+                                <img src={btn.icon} width='30px' alt='icon' />
                                 &nbsp;
                                 {btn.text}
                             </Button>
