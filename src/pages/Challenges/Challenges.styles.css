@@ -8,6 +8,29 @@
     align-items: center;
 }
 
+.username {
+  background-color: rgba(71, 55, 103, 0.5);
+  padding: 1rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  position: absolute;
+  transition: all .2s;
+  top: 25px;
+  left: 25px;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+}
+
+.username:hover {
+  background-color: rgba(71, 55, 103, 0.9);
+  cursor: pointer;
+}
+
 .dashboard-team {
     background-color: #281047;
     width: 100%;

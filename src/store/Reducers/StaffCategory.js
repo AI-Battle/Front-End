@@ -1,7 +1,7 @@
 const StaffCategory = [
     {
         id: 1,
-        name: 'دبیران برگزاری'
+        name: 'دبیر ها'
     },
     {
         id: 2,
