@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import FormInput from '../components/form-input.component';
 import CustomButton from '../components/custom-button.component';
 import Paper from '@material-ui/core/Paper';
@@ -10,8 +10,8 @@ import { withStyles } from '@material-ui/styles';
 
 const styles = {
     returnButton: {
-        fontSize: '1.5rem', 
-        float: 'left', 
+        fontSize: '1.5rem',
+        float: 'left',
         marginTop: '1rem',
         textDecoration: 'none',
         color: 'white',
@@ -33,15 +33,15 @@ const styles = {
 }
 
 class SignIn extends Component {
-	constructor(props){
-		super(props)
+    constructor(props) {
+        super(props)
 
-		this.state={
+        this.state = {
             profileName: '',
-			password: ''
-		}
+            password: ''
+        }
     }
-    
+
     // componentDidMount() {
     //     const data = axios.get('API')
     //         .then(response => response.data)
@@ -50,33 +50,33 @@ class SignIn extends Component {
     //         if(data.userId)
     // }
 
-	handleSubmit = async event => {
-		event.preventDefault();
+    handleSubmit = async event => {
+        event.preventDefault();
 
-		try {
+        try {
             // Sending Data to database
             console.log(this.state);
             // axios.post('API', this.state)
             //     .then(response => console.log(response))
-		} catch (error) {
-			console.log(error);
-		}
+        } catch (error) {
+            console.log(error);
+        }
 
         this.setState({ email: '', password: '' });
         this.props.history.push('/challenges')
-	}
+    }
 
-	handleChange = event => {
-		const { value, name } = event.target;
+    handleChange = event => {
+        const { value, name } = event.target;
 
-		this.setState({ [name]: value });
-	}
+        this.setState({ [name]: value });
+    }
 
-	render(){
-		return(
+    render() {
+        return (
             <Grid container>
                 <Grid item xs={12}>
-                    <Paper 
+                    <Paper
                         square
                         style=
                         {{
@@ -87,50 +87,53 @@ class SignIn extends Component {
                             backgroundColor: 'rgb(41, 9, 78)'
                         }}
                     >
-                        <Grid item xs={6} style={{marginTop: '5%'}}>
-                            <Paper style={{padding: '2rem'}} elevation={3}>
+                        <Grid item xs={6} style={{ marginTop: '5%' }}>
+                            <Paper style={{
+                                padding: '2rem',
+                                background: '#481A7E'
+                            }} elevation={3}>
                                 <div className='sign-in'>
-                                    <h2 className='title'>قبلا عضو شده اید؟</h2>
-                                    <span>ورود به پنل کاربری</span>
+                                    <h2 className='title' style={{ color: '#FF5722' }}>قبلا عضو شده اید؟</h2>
+                                    <span style={{ color: '#FF5722' }}>ورود به پنل کاربری</span>
                                     <form onSubmit={this.handleSubmit}>
-                                        <FormInput 
-                                            name='profileName' 
-                                            type='text' 
-                                            value={this.state.profileName} 
+                                        <FormInput
+                                            name='profileName'
+                                            type='text'
+                                            value={this.state.profileName}
                                             handleChange={this.handleChange}
                                             label='نام کاربری'
-                                            required 
+                                            required
                                         />
-                                
-                                        <FormInput 
+
+                                        <FormInput
                                             autoComplete="new-password"
-                                            name='password' 
+                                            name='password'
                                             type='password'
-                                            value={this.state.password} 
+                                            value={this.state.password}
                                             handleChange={this.handleChange}
-                                            label='رمز عبور' 
-                                            required 
+                                            label='رمز عبور'
+                                            required
                                         />
-                                        
+
                                         <div className='buttons'>
                                             <CustomButton type='submit'>ورود</CustomButton>
                                         </div>
-                                        
+
                                     </form>
                                 </div>
                             </Paper>
-                            <Link 
-                                to='/' 
+                            <Link
+                                to='/'
                                 className={this.props.classes.returnButton}
                             >
                                 &#8592;بازگشت
                             </Link>
                         </Grid>
                     </Paper>
-                </Grid> 
-            </Grid>    
-		)
-	}
+                </Grid>
+            </Grid>
+        )
+    }
 }
 
 
